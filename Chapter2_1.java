@@ -18,7 +18,7 @@ public class Chapter2_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Utilize the DecimalFormat class to format text
+		// Utilize the DecimalFormat class to format text
 		DecimalFormat currency = new DecimalFormat("###,##0.00"); 
 		//placeholder variable to store input for later conversion
 		String str; 
@@ -34,7 +34,9 @@ public class Chapter2_1 {
 		System.out.println("My name is " + name + ", my age is " + age + ", and I hope "
 				+ "to earn $" + currency.format(annualPay) + " per year");
 		
-		
+		// Update: added System.exit(0) method to properly close in the JVM, as is proper use 
+		// under JOptionPane syntax
+		System.exit(0);
 	}
 
 }
