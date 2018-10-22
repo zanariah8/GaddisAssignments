@@ -51,6 +51,13 @@ public class Chapter2_19 {
 		System.out.println("Joe earned " + currency.format(total_sold) + " for the shares.");
 		System.out.println("Joe paid his broker " + currency.format(sold_commission) + ".");
 		
+		// update:
+		// use a conditional operator instead of an if-else statement to streamline the code
+		System.out.println("Joe " + (earnings > 0 ? "made a profit of " : "lost ") 
+				   + currency.format(earnings) + ".");
+		
+		/*
+		// part of original code; refactored to include the conditional operator above
 		// use an if statement to determine whether or not Joe earned a profit or lost money
 		if(earnings > 0) {
 			System.out.println("Joe made a profit of " + currency.format(earnings) + ".");
@@ -58,6 +65,7 @@ public class Chapter2_19 {
 		else {
 			System.out.println("Joe lost " + currency.format(earnings) + ".");
 		}
+		*/
 	}
 
 }
